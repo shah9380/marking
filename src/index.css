@@ -1,0 +1,129 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+	.markdown h1 {
+		@apply text-4xl font-bold;
+	}
+
+	.markdown h2 {
+		@apply text-3xl font-bold;
+	}
+
+	.markdown h3 {
+		@apply text-2xl font-bold;
+	}
+
+	.markdown h4 {
+		@apply text-xl font-bold;
+	}
+
+	.markdown h5 {
+		@apply text-lg font-bold;
+	}
+
+	.markdown h6 {
+		@apply text-base font-bold;
+	}
+
+	.markdown a {
+		@apply text-blue-600 underline;
+	}
+
+	.markdown p {
+		@apply my-4;
+	}
+
+	.markdown ul {
+		@apply list-disc;
+	}
+
+	.markdown ol {
+		@apply list-decimal;
+	}
+
+	.markdown blockquote {
+		@apply pl-4 border-l-4 border-gray-300;
+	}
+
+	.markdown code {
+		@apply p-1 bg-gray-100 rounded-md;
+	}
+
+	.markdown pre {
+		@apply p-4 bg-gray-100;
+	}
+
+	.markdown img {
+		@apply w-full;
+	}
+
+	.markdown table {
+		@apply w-full;
+	}
+
+	.markdown th {
+		@apply p-2 border border-gray-300;
+	}
+
+	.markdown td {
+		@apply p-2 border border-gray-300;
+	}
+
+	.markdown hr {
+		@apply my-4;
+	}
+
+	.markdown strong {
+		@apply font-semibold;
+	}
+
+	.markdown em {
+		@apply italic;
+	}
+}
+
+.split {
+	display: flex;
+	flex-direction: row;
+}
+
+.gutter {
+	background-color: #eee;
+	background-repeat: no-repeat;
+	background-position: 50%;
+}
+
+.gutter.gutter-horizontal {
+	background-color: #eee;
+	cursor: col-resize;
+}
+button {
+	cursor: pointer;
+	border-radius: 5px;
+	color: rgb(219, 218, 218);
+	border-style: solid;
+	background-color: transparent;
+	border-color: rgb(219, 218, 218);
+	width: 120px;
+	height: 40px;
+	transition: 0.2s ease;
+	text-transform: uppercase;
+	border-width: 2px;
+	font-weight: 500;
+	font-size: 18px;
+	letter-spacing: 2px;
+  }
+  button:hover {
+	color: rgb(203, 217, 255);
+	background-color: rgba(255, 47, 0, 0.393);
+	border-color: rgb(0, 81, 255);
+	letter-spacing: 3px;
+  }
+  button:active {
+	width: 115px;
+	height: 38px;
+	letter-spacing: 0px;
+  }
+  
